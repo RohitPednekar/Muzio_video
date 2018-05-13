@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="speaker.SpeakerActivity"
+    android:weightSum="1">
+
+    <fragment
+        android:id="@+id/fragment_speakermusic"
+        android:name="com.example.acer.msic.speaker.SpeakerVideoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        tools:layout="@layout/fragment_speakermusic"
+        android:layout_weight="0.21" />
+
+    <fragment
+        android:id="@+id/frag_speakers_devices"
+        android:name="com.example.acer.msic.speaker.ClientDeviceListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        tools:layout="@layout/row_devices" />
+
+    <TextView
+        android:id="@+id/txt_speaker_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
